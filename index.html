@@ -2,11 +2,13 @@
 <html lang="en" ng-app="exampleApp">
 <head>
     <script src="/node_modules/angular/angular.js"></script>
-    <script src="/node_modules/angular-route/angular-route.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/node_modules/oclazyload/dist/ocLazyLoad.js"></script>
     <script src="/src/app/app.module.js"></script>
+    <script src="/src/app/app.config.js"></script>
 </head>
 <body>
-    TODO (index.html)
+    <div>TODO (index.html)</div>
+    <div ui-view="lazyLoadView"></div>
 </body>
 </html>

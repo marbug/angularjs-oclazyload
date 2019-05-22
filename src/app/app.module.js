@@ -1,5 +1,7 @@
 'use strict';
 
-// Define the `phonecatApp` module
-angular.module('exampleApp', [
-]);
+angular
+    .module('exampleApp', [
+        'ui.router',
+        'oc.lazyLoad',
+    ]);
