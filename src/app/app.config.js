@@ -35,9 +35,31 @@ function appConfig(
                 loadExampleAppHome: ['$ocLazyLoad', function($ocLazyLoad) {
                     // you can lazy load files for an existing module
                     return $ocLazyLoad.load([{
-                        cache: false,
+                        // TODO: use cache to reload file during each navigation
+                        // cache: false,
                         files: [
                             'src/app/home/home.controller.js'
+                        ],
+                    }]);
+                }]
+            }
+        })
+        .state('admin', {
+            url: "/admin",
+            views: {
+                lazyLoadView: {
+                    controller: 'ExampleAppAdminCtrl',
+                    templateUrl: 'src/app/admin/admin.template.html',
+                },
+            },
+            resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                loadExampleAppAdmin: ['$ocLazyLoad', function($ocLazyLoad) {
+                    // you can lazy load files for an existing module
+                    return $ocLazyLoad.load([{
+                        // TODO: use cache to reload file during each navigation
+                        // cache: false,
+                        files: [
+                            'src/app/admin/admin.controller.js'
                         ],
                     }]);
                 }]
