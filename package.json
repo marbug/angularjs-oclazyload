@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "* TODO",
   "scripts": {
+    "start": "http-server ./ -a localhost -p 8000 -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
