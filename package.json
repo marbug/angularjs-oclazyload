@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "angular": "^1.5.8",
-    "angular-route": "^1.5.8"
+    "angular-route": "^1.5.8",
+    "oclazyload": "^1.1.0"
   },
   "devDependencies": {
     "http-server": "^0.11.1"
