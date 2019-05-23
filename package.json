@@ -12,6 +12,7 @@
     "oclazyload": "^1.1.0"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "local-web-server": "^2.6.1"
   }
 }
