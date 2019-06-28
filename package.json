@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "* TODO",
   "scripts": {
+    "build": "build.sh",
     "start": "npm run start:local-web-server",
     "start:lws": "npm run start:local-web-server",
     "start:local-web-server": "ws",
